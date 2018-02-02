@@ -8,12 +8,6 @@ Telegram bot, to use remote CMD command prompt on local computer or server from 
 
 All types and methods of the Telegram Bot API 3.4 are supported.
 
-## Install
-
-```bash
-npm install --save telebot
-```
-
 ## License
 
 **The MIT License (MIT)**

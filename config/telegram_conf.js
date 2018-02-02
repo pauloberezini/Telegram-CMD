@@ -1,19 +1,19 @@
 const TelegramBot = require('node-telegram-bot-api');
-const token = '';
+const token = 'token'; // Replace the value "token" below with the Telegram token you receive from @BotFather
+const administratorId = 'administratorId';// Replace the value "administratorId" below with the you personal id of your Telegram account
 const bot = new TelegramBot(token, {polling: true});
-var exec = require('child_process').exec, child;////////////////EXECUTE CMD
-/////////////////////////////////////////////////////BOT ANSWER/////////////////////////////////////////////////////
+var exec = require('child_process').exec, child;// Execute cmd
+// Bot answer
 bot.onText(/(.*)/, function (msg, match) {
     var fromId = msg.from.id;
     var resp = new String(match[0]);
     resp = resp.toLowerCase();
-/////////////////////////////////////////////////////COMMAND CONTROLLER/////////////////////////////////////////////////////
-    if(resp.charAt(0) =='\\' && fromId == '216199859') {
+    if(resp.charAt(0) =='\\' && fromId == 'fromId') {
         resp = resp.slice(1);
         var respTo = resp.split(' ');
         var enter = respTo[0];
-/////////////////////////////////////////////////////COMMAND CMD/////////////////////////////////////////////////////
-        if (enter == 'cmd' && fromId == '') {
+// Command to Cmd
+        if (enter == 'cmd' && fromId == administratorId) {
             var getter = respTo.join(' ');
             var prefCommand = getter.replace(/cmd /,'');
             var command =  prefCommand;
@@ -34,5 +34,4 @@ bot.onText(/(.*)/, function (msg, match) {
             bot.sendMessage(fromId, "command find error - "+ command);
         }
     }
-
 });

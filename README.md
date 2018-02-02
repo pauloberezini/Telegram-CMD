@@ -1,6 +1,6 @@
-# Telegram bot CMD consol
+# Telegram bot CMD Command Prompt
 
-Telegram bot, to use remote CMD console on local computer or server from telegram application.
+Telegram bot, to use remote CMD command prompt on local computer or server from telegram application.
 
 
 

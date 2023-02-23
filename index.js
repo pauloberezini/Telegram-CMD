@@ -1,3 +1,4 @@
-var server = require('./config/server');
-var telegram = require('./config/telegram_conf');
-server.start;
+require('dotenv').config();
+require('./config/server').start;
+var telegramApi = require('./config/telegram_conf');
+

@@ -7,13 +7,17 @@ How to start
 create in root .env file with next parameters
 
 PORT=3333
+
 TELEGRAM_BOT_TOKEN=
+
 TELEGRAM_ADMINISTRATOR_ID=
 
 add there token and your telegram account id like
 
 PORT=3333
+
 TELEGRAM_BOT_TOKEN=678678678:dfsdfsder3ewefdsfafs
+
 TELEGRAM_ADMINISTRATOR_ID=06678067760
 
 

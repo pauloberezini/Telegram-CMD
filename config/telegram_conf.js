@@ -1,5 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api');
-const token = process.env.TELEGRAM_TOKEN; // Replace the value "token" below with the Telegram token you receive from @BotFather
+const token = process.env.TELEGRAM_BOT_TOKEN; // Replace the value "token" below with the Telegram token you receive from @BotFather
 const administratorId = process.env.TELEGRAM_ADMINISTRATOR_ID;// Replace the value "administratorId" below with the you personal id of your Telegram account
 const bot = new TelegramBot(token, { polling: true });
 var exec = require('child_process').exec, child;// Execute cmd

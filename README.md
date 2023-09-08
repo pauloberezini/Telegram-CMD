@@ -21,7 +21,18 @@ TELEGRAM_ADMINISTRATOR_ID=06678067760
 node index.js
 ```
 
+How to start in docker
 
+```
+docker build -t telegram-cmd .
+docker run -d
+    --name cmd
+    -p 3333:3333
+    -e PORT=3333
+    -e TELEGRAM_BOT_TOKEN=678678678:dfsdfsder3ewefdsfafs
+    -e TELEGRAM_ADMINISTRATOR_ID=06678067760
+    telegram-cmd
+```
 
 # Telegram API support
 
